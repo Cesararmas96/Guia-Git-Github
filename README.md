@@ -135,3 +135,18 @@ git stash drop stash@{0}:Elimina el stash
 ---
 
 git cherry-pick numeroCommit: permite selecionar el commit y moverlo a la rama donde estas
+
+---
+
+Llaves SSH
+
+(llave ssh - generacion de la llave - -t algoritmo especial que se quiere generar - algoritmo rsa - complejida -b - tipo de algoritmo matematico - -C correo electronico - correo@mail.com)
+
+1. Creacion la llave:
+   ssh-keygen -t rsa -b 4096 -C "caal2096@gmail.com"
+
+2. Verificacion si esta corriendo dentro del equivo
+   eval \$(ssh-agent -s)
+
+3)Agregar la llave al sistema
+ssh-add ~/.ssh/id_rsa

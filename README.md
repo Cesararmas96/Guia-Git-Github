@@ -48,6 +48,8 @@ Recuerda que al ejecutar el comando git checkout para cambiar de rama o commit p
 
 ---
 
+#Agregar repositorio a Github
+
 Guardar la url del repositorio de github con el nombre origin
 
 1. git remote add origin https://github.com/caal2096/Fundamentos-Js-Platzi.git
@@ -97,7 +99,7 @@ git diff (commitDeComparacionConElActual) (compraracionotro)
 
 ---
 
-git Reset
+#git Reset
 
 git reset --soft --mixed --hard
 
@@ -138,7 +140,7 @@ git cherry-pick numeroCommit: permite selecionar el commit y moverlo a la rama d
 
 ---
 
-Llaves SSH
+#Llaves SSH
 
 (llave ssh - generacion de la llave - -t algoritmo especial que se quiere generar - algoritmo rsa - complejida -b - tipo de algoritmo matematico - -C correo electronico - correo@mail.com)
 
@@ -150,3 +152,8 @@ Llaves SSH
 
 3)Agregar la llave al sistema
 ssh-add ~/.ssh/id_rsa
+
+# Realizar commit a travez de ssh
+
+Cambiar la direccion remota
+git remote set-url origin git@github.com:caal2096/Curso-Git2019.git

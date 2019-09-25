@@ -6,6 +6,5 @@ edad: 20
 <<<<<<< Updated upstream
 1.1
 1.2
-=======
-dfno
+
 >>>>>>> Stashed changes

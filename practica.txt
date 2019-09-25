@@ -1,6 +1,0 @@
-Hola como estas 
-todo bien 
-hola
-edad: 20
-
-git cherry-pick 

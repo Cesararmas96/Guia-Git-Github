@@ -1,5 +1,19 @@
 #Guia Basica de Git y Github
 
+##Commit
+
+- Si se realizo el ultimo commit y se necesita agregar algo mas.
+
+```
+$ git commit -m 'Realizar de nuevo el commit' --amend
+```
+
+- Commit para los archivos modificados.
+
+```
+$ git commit -am 'Archivo modificados'
+```
+
 ##Tags (Etiquetas)
 
 ###Creacion de Tags.
@@ -103,6 +117,7 @@ git remote add origin git@github.com:usuario/repositorio.git
 
 ##Guardar cambios del repositorio local a [Github](https://github.com)
 
+Consiste en traer la version del repositorio remoto y hacer merge para crear un commit con los archivos de ambas partes. Podemos usar git fetch y **git merge** o solo el **git pull** con el **flag --allow-unrelated-histories**.
 
 1. Traer la version del repositorio del repositorio remoto para poder sincronizar los commits entre las 2 versiones .
 ```$ git pull origin master --allow-unrelated-histories
@@ -111,7 +126,13 @@ git remote add origin git@github.com:usuario/repositorio.git
 ```$ git push origin master
 ```
 
+>**push**: Nos permite enviar al servidor remoto. **ENVIAR**
 
+> **fetch**: Hacer la copia a mi directorio de trabajo desde el repositorio remoto. **RECIBIR**
+
+>**merge**: Combina los últimos cambios del servidor remoto y nuestro directorio de trabajo.
+
+> **pull**: Básicamente, git fetch y git merge al mismo tiempo.
 
 ## Branch (rama)
 
@@ -212,65 +233,25 @@ $ git log --oneline --graph
 $ git log --graph --decorate --pretty=oneline --abbrev-commit --all
 ```
 
+## Stash
 
+* Permite guardar si hacer ningun commit muy util a la hora de cambiar de ramas ya que no se mueve los cambios hacia otra ramas.
+```
+$ git stash
+```
 
+* Realizar el primer stash cambio.
+```
+$ git stash apply
+```
 
+* Realizar el stash seleccionado.
+```
+$ git stash apply stash@{1}
+```
 
-
-
-
-Tercero Traer la version del repositorio remoto y hacer merge para crear un commit con los archivos de ambas partes. Podemos usar git fetch y git mer o solo el git pull con el flag --allow-unrelated-history
-
-
-
-
-
-
-
-fetch: recibir
-push: enviar
-
----
-
-git fetch : hacer la copia a mi directorio de trabajo desde el repositorio remoto
-
-pero se usa el pull
-
-git push: Luego de hacer git add y git commit debemos ejecutar este comando para mandar los cambios al servidor remoto.
-
-git fetch: Lo usamos para traer actualizaciones del servidor remoto y guardarlas en nuestro repositorio local (en caso de que hayan, por supuesto).
-
-git merge: También usamos el comando git fetch con servidores remotos. Lo necesitamos para combinar los últimos cambios del servidor remoto y nuestro directorio de trabajo.
-
-git pull: Básicamente, git fetch y git merge al mismo tiempo.
-
----
-
-git commit -am 'Archivo modificados' : commit para los archivos modificados.
-
-
-
-
-
-
-git commit --amend: Permite si ya realizaste el commmit de los archivos y se te paso uno permite agregarlo sin crear un nuevo commit
-
-
-
-
-
-git stash: Permite guardar sin hacer ningun commit, a la hora de cambiar de ramas es util ya que no mueve los cambios hacia otra rama, este tiene que estar en el state
-
-git stash apply: Realiza el primer cambio
-git stash apply stash{nuevo}: Realiza el primer cambio
-
-git stash list: muestra la lista de los stash
-
-git stash drop stash@{0}:Elimina el stash
-
----
-
-git cherry-pick numeroCommit: permite selecionar el commit y moverlo a la rama donde estas
-
----
+* Eliminar el stash
+```
+$ git stash drop stash@{0}
+```
 ````

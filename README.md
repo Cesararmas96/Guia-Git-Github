@@ -28,13 +28,13 @@ $ git tag numeroversion -m 'mensaje'
 
 ###Creacion de Tags.
 
-Creacion de tag para la versiones
+- Creacion de tag para la versiones
 
 ```$ git tag numeroversion -m 'mensaje'
 
 ```
 
-Creacion del tag y asignarlo a un commit
+- Creacion del tag y asignarlo a un commit
 
 ```
 $ git tag numeroversion NumeroCommit
@@ -58,7 +58,7 @@ $ git tag -f -a numeroversionNew -m 'mensaje'```
 
 \$ git tag -d NumeroVersionBorrar
 
-```
+```-
 
 ##LLaves SSH
 
@@ -128,20 +128,21 @@ Consiste en traer la version del repositorio remoto y hacer merge para crear un 
 
 >**push**: Nos permite enviar al servidor remoto. **ENVIAR**
 
-> **fetch**: Hacer la copia a mi directorio de trabajo desde el repositorio remoto. **RECIBIR**
+> **fetch**: Hacer la copia a mi directorio de trabajo desde el repositorio remoto. **TRAER**
 
->**merge**: Combina los últimos cambios del servidor remoto y nuestro directorio de trabajo.
+>**merge**: Combina los últimos cambios del servidor remoto y nuestro directorio de trabajo. `git merge origin/master --allow-unrelated-histories`
+
 
 > **pull**: Básicamente, git fetch y git merge al mismo tiempo.
 
 ## Branch (rama)
 
-Creacion de branch.
+* Creacion de branch.
 
 ``` $ git branch nombre
 ```
 
-Creacion de una branch y moverse a ella.
+* Creacion de una branch y moverse a ella.
 
 ```$ git branch -m nombre
 ```
@@ -149,12 +150,13 @@ Creacion de una branch y moverse a ella.
 ```$ git checkout -b nuevarama
 ```
 
-Renombrar branch.
+
+* Renombrar branch.
 
 ```$ git branch -m vieja nueva
 ```
 
-Eliminar branch.
+* Eliminar branch.
 
 ```
 $ git branch -d nombre
@@ -173,6 +175,13 @@ $ git checkout master
 ```
 $ git merge otrarama
 ```
+
+* Traer un commit de otra rama:
+
+```
+git cherry-pink numerocommit
+```
+
 
 ##Reset
 

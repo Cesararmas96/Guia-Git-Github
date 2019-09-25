@@ -3,8 +3,4 @@ todo bien
 hola
 edad: 20
 
-<<<<<<< Updated upstream
-1.1
-1.2
-
->>>>>>> Stashed changes
+git cherry-pick 

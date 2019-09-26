@@ -24,17 +24,17 @@ Creación de tag para la versiones.
 $ git tag numeroversion -m 'mensaje'
 ```
 
-##Tags (Etiquetas)
+## Tags (Etiquetas)
 
 ### Creacion de Tags.
 
-- Creacion de tag para la versiones
-
-```$ git tag numeroversion -m 'mensaje'
+* Creacion de tag para la versiones
 
 ```
+$ git tag numeroversion -m 'mensaje'
+```
 
-- Creacion del tag y asignarlo a un commit
+* Creacion del tag y asignarlo a un commit
 
 ```
 $ git tag numeroversion NumeroCommit
@@ -50,14 +50,14 @@ $ git NumeroTag -d
 
 1.  Crear un nuevo tag.
 
-````
-$ git tag -f -a numeroversionNew -m 'mensaje'```
+```
+$ git tag -f -a numeroversionNew -m 'mensaje'
 
+```
 2. Luego borrar el tag seleccionado.
-````
 
-\$ git tag -d NumeroVersionBorrar
-
+```
+$ git tag -d NumeroVersionBorrar
 ```
 
 ## LLaves SSH
@@ -70,25 +70,18 @@ $ git tag -f -a numeroversionNew -m 'mensaje'```
 
 2. Verificación si esta corriendo dentro del computador.
 ```
-
 $ eval $(ssh-agent -s)
-
 ```
-
 3. Agregar la llave al sistema.
 ```
-
 \$ ssh-add ~/.ssh/id_rsa
-
 ```
 
 ###  Cambiar direccion del repositorio remoto.
 > Si posee una dirreccion HTTPS  y no una SSH es necesario es necesario realizar este paso.
 
 ```
-
 \$ git remote set-url origin git@github.com:nombre/nombre-repositorio.git
-
 ````
 
 ## Repositorio local a Github
@@ -263,4 +256,4 @@ $ git stash apply stash@{1}
 ```
 $ git stash drop stash@{0}
 ```
-````
+

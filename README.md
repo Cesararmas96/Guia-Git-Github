@@ -1,6 +1,6 @@
-#Guia Basica de Git y Github
+# Guia Basica de Git y Github
 
-##Commit
+## Commit
 
 - Si se realizo el ultimo commit y se necesita agregar algo mas.
 
@@ -14,9 +14,9 @@ $ git commit -m 'Realizar de nuevo el commit' --amend
 $ git commit -am 'Archivo modificados'
 ```
 
-##Tags (Etiquetas)
+## Tags (Etiquetas)
 
-###Creacion de Tags.
+### Creacion de Tags.
 
 Creación de tag para la versiones.
 
@@ -26,7 +26,7 @@ $ git tag numeroversion -m 'mensaje'
 
 ##Tags (Etiquetas)
 
-###Creacion de Tags.
+### Creacion de Tags.
 
 - Creacion de tag para la versiones
 
@@ -40,13 +40,13 @@ $ git tag numeroversion -m 'mensaje'
 $ git tag numeroversion NumeroCommit
 ```
 
-###Borrar tag
+### Borrar tag
 
 ```
 $ git NumeroTag -d
 ```
 
-###Renombrar un tag.
+### Renombrar un tag.
 
 1.  Crear un nuevo tag.
 
@@ -58,11 +58,11 @@ $ git tag -f -a numeroversionNew -m 'mensaje'```
 
 \$ git tag -d NumeroVersionBorrar
 
-```-
+```
 
-##LLaves SSH
+## LLaves SSH
 
-###Creación de la llave SSH.
+### Creación de la llave SSH.
 
 > ssh-generacion de la llave - algoritmo especial que se quiere generar - algoritmo rsa - complejida - tipo de algoritmo matematico - correo electronico - correo@mail.com.
 
@@ -82,7 +82,7 @@ $ eval $(ssh-agent -s)
 
 ```
 
-###Cambiar direccion del repositorio remoto.
+###  Cambiar direccion del repositorio remoto.
 > Si posee una dirreccion HTTPS  y no una SSH es necesario es necesario realizar este paso.
 
 ```
@@ -91,7 +91,7 @@ $ eval $(ssh-agent -s)
 
 ````
 
-##Repositorio local a Github
+## Repositorio local a Github
 
 Pasos para agregar un repositorio creado a **Github**:
 
@@ -115,7 +115,7 @@ git remote add origin git@github.com:usuario/repositorio.git
 ```git remote -v
 ```
 
-##Guardar cambios del repositorio local a [Github](https://github.com)
+## Guardar cambios del repositorio local a [Github](https://github.com)
 
 Consiste en traer la version del repositorio remoto y hacer merge para crear un commit con los archivos de ambas partes. Podemos usar git fetch y **git merge** o solo el **git pull** con el **flag --allow-unrelated-histories**.
 
@@ -162,7 +162,7 @@ Consiste en traer la version del repositorio remoto y hacer merge para crear un 
 $ git branch -d nombre
 ```
 
-##Fuccion de branch.
+## Fuccion de branch.
 
 > Merge permite combinar 2 ramas , la rama donde nos encontramos y la rama que indiquemos en el comando.
 
@@ -183,7 +183,7 @@ git cherry-pink numerocommit
 ```
 
 
-##Reset
+## Reset
 
 * Quita el commit pero este se mantiene el states y no se borra en el working directory.
 ```
@@ -200,7 +200,7 @@ $ git reset --mixed CommitDondeQuiereQuedarse
 $ git reset --hard CommitEliminar
 ```
 
-##Diferenciacion de Commit
+## Diferenciacion de Commit
 
 * Ver diferenciacion del commit con el ultimo.
 
@@ -214,7 +214,7 @@ $ git diff CommitActual CommitOtro
 ```
 
 
-##Graficar los branchs y los commits.
+## Graficar los branchs y los commits.
 
 
 

@@ -103,9 +103,11 @@ git remote add origin git@github.com:usuario/repositorio.git
 ```
 
 5. Verificar si la URL O llave SSH se ha guardado correctamente.
-```git remote
 ```
-```git remote -v
+git remote
+```
+```
+git remote -v
 ```
 
 ## Guardar cambios del repositorio local a [Github](https://github.com)
@@ -113,10 +115,12 @@ git remote add origin git@github.com:usuario/repositorio.git
 Consiste en traer la version del repositorio remoto y hacer merge para crear un commit con los archivos de ambas partes. Podemos usar git fetch y **git merge** o solo el **git pull** con el **flag --allow-unrelated-histories**.
 
 1. Traer la version del repositorio del repositorio remoto para poder sincronizar los commits entre las 2 versiones .
-```$ git pull origin master --allow-unrelated-histories
+```
+$ git pull origin master --allow-unrelated-histories
 ```
 2. Guardar los cambios en el repositorio local en **Github**
-```$ git push origin master
+```
+$ git push origin master
 ```
 
 >**push**: Nos permite enviar al servidor remoto. **ENVIAR**
@@ -132,21 +136,24 @@ Consiste en traer la version del repositorio remoto y hacer merge para crear un 
 
 * Creacion de branch.
 
-``` $ git branch nombre
+```
+$ git branch nombre
 ```
 
 * Creacion de una branch y moverse a ella.
 
-```$ git branch -m nombre
+```
+$ git branch -m nombre
 ```
 
-```$ git checkout -b nuevarama
 ```
-
+$ git checkout -b nuevarama
+```
 
 * Renombrar branch.
 
-```$ git branch -m vieja nueva
+```
+$ git branch -m vieja nueva
 ```
 
 * Eliminar branch.
